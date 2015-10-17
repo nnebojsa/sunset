@@ -10,4 +10,4 @@
 ### END INIT INFO
 
 
-python /home/svcSunRise/svcSunRise/src/SunSetRise.py &>/var/log/svcSunRise/svcSunRise.log &
+python /var/www/html/svcSunRise/src/SunSetRise.py &>/var/log/svcSunRise/svcSunRise.log &
