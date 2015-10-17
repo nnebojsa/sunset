@@ -1,0 +1,16 @@
+#!/bin/sh
+apt-get update
+apt-get install -y apache2
+apt-get install -y git
+apt-get install -y python-pip
+sudo pip install web.py
+mkdir /home/vagrant/git
+cd /home/vagrant/git
+git clone https://github.com/nnebojsa/svcSunRise.git
+cp -arp /home/vagrant/git/svcSunRise /var/www/html/
+cd /var/www/html/svcSunRise/src
+service apache2 restart
+cp -arp /vagrant/init.d/svcSunRise /etc/init.d/
+
+
+
