@@ -1,2 +1,2 @@
 cd /etc/init.d
-update-rc.d svcSunRise default
+update-rc.d svcSunRise defaults
